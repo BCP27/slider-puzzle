@@ -42,3 +42,63 @@ header {
 #puzzleGrid td img {
     display: block;
 }
+.hide{
+    display: none;
+}
+#button{
+    position: relative;
+    top: 30px;
+    height: 23px;
+    width: 53px;
+}
+#border{
+    border: 3px solid #783F04;
+    font-weight: bold;
+    color: #097c99;
+    background-color: #783F04;
+    border-style: outset;
+}
+#win{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+#video1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+#video2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  #video1 {
+    height: 300%;
+    top: -100%;
+  }
+    #video2 {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #video1 {
+    width: 300%;
+    left: -100%;
+  }
+    #video2 {
+    width: 300%;
+    left: -100%;
+  }
+}
